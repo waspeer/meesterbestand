@@ -1,8 +1,7 @@
 {
-  /* Poetic base style configuration */
   "extends": "./node_modules/poetic/config/typescript/tsconfig.json",
-  /* Add your custom configuration after this */
   "include": ["./src/**/*"],
+  "exclude": ["./src/test/**/*", "*.test.ts"],
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -10,17 +9,16 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "isolatedModules": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "jsx": "react",
     "noEmit": true,
-    // "rootDir": "./src",
     "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
-      "#projects-module/*": ["./modules/projects/*"]
+      "#projects-module/*": ["./modules/projects/*"],
+      "#test/*": ["test/*"]
     }
   }
 }
