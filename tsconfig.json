@@ -6,11 +6,7 @@
   "compilerOptions": {
     "target": "es5",
     "outDir": "dist",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -20,6 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "jsx": "react",
-    "noEmit": true
+    "noEmit": true,
+    "rootDir": "src"
   }
 }
