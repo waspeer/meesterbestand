@@ -4,13 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
-    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
     "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}'",
-    "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
+    "test": "jest"
   },
   "devDependencies": {
-    "poetic": "^1.4.0"
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "poetic": "^1.4.0",
+    "ts-jest": "^25.2.0"
   }
 }
