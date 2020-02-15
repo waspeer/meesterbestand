@@ -16,5 +16,11 @@
     "jest": "^25.1.0",
     "poetic": "^1.4.0",
     "ts-jest": "^25.2.0"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "#projects-module": "modules/projects"
   }
 }
